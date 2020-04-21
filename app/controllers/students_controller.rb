@@ -8,4 +8,13 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
 
+  def new
+  
+  end
+
+  def create
+    session[params] = params
+    
+  end
+
 end
